@@ -43,3 +43,9 @@ body {
 .top-bar nav ul li a:hover {
     text-decoration: underline;
 }
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  

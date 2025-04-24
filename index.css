@@ -44,6 +44,11 @@ body {
     text-decoration: underline;
 }
 
+.logo {
+    height: 30px;
+    width: auto;
+  }
+
 /* Dark Mode Styles */
 body.dark-mode {
     background-color: #121212;

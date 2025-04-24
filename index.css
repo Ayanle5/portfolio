@@ -49,3 +49,13 @@ body {
     color: white;
   }
   
+#darkmode.dark-mode {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+  }
+  
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }

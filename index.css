@@ -57,12 +57,16 @@ body.dark-mode {
 
 /* Button Styles */
 #darkmode {
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    padding: 5px 5px;
-    cursor: pointer;
-    border-radius: 8px;
+    background-color: #13347c; /* Dark blue background */
+    color: white;              /* White text */
+    border: none;              /* Remove default borders */
+    border-radius: 8px;        /* Rounded corners */
+    /*padding: 10px 20px;        /* Vertical and horizontal padding */
+    font-size: 16px;           /* Text size */
+    font-weight: bold;         /* Bold text */
+    cursor: pointer;          /* Pointer on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
     
 }
 

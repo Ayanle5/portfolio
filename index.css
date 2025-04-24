@@ -17,7 +17,6 @@ body {
     margin-top: 60px;  
 }
 
-/* Logo */
 .top-bar .logo {
     font-size: 20px;
     font-weight: bold;
@@ -69,5 +68,5 @@ body.dark-mode {
 }
 
 #darkmode:hover {
-    background-color: #737179;
+    background-color: #9f9da7;
 }

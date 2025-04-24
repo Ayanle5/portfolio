@@ -58,6 +58,7 @@ body.dark-mode {
     padding: 5px 5px;
     cursor: pointer;
     border-radius: 8px;
+    
 }
 
 /* Button Dark Mode Styles */
@@ -65,4 +66,8 @@ body.dark-mode {
     background-color: black;
     color: white;
     border: 2px solid white;
+}
+
+#darkmode:hover {
+    background-color: #737179;
 }

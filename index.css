@@ -18,6 +18,18 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;}
 
+.row {
+    display: flex;
+}
+      
+.column {
+    flex: 50%;
+}
+
+.list{
+    list-style-position: inside;
+}
+
 .top-bar .logo {
     font-size: 20px;
     font-weight: bold;
@@ -44,10 +56,7 @@ body {
     text-decoration: underline;
 }
 
-.logo {
-    height: 30px;
-    width: auto;
-  }
+
 
 /* Dark Mode Styles */
 body.dark-mode {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>My Projects</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="slide.css">
@@ -24,10 +25,10 @@
         </nav>
     </header>
     
-    <div class ="container">
+    <div class ="container swiper">
         <div class="card-wrapper">
-            <ul class="card-list">
-                <li class="card-item">
+            <ul class="card-list swiper-wrapper">
+                <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
                         <img src="stuff/place1.jpeg" alt="Card Image" class="card-image">
                         <p class="badge one">1</p>
@@ -36,7 +37,7 @@
                         material-symbols-rounded">arrow_forward</button>
                     </a>
                 </li>  
-                <li class="card-item">
+                <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
                         <img src="stuff/place2.jpeg" alt="Card Image" class="card-image">
                         <p class="badge two">2</p>
@@ -45,7 +46,7 @@
                         material-symbols-rounded">arrow_forward</button>
                     </a>
                 </li>  
-                <li class="card-item">
+                <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
                         <img src="stuff/place3.jpeg" alt="Card Image" class="card-image">
                         <p class="badge three">3</p>
@@ -54,7 +55,7 @@
                         material-symbols-rounded">arrow_forward</button>
                     </a>
                 </li>  
-                <li class="card-item">
+                <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
                         <img src="stuff/place4.jpeg" alt="Card Image" class="card-image">
                         <p class="badge four">4</p>
@@ -63,7 +64,7 @@
                         material-symbols-rounded">arrow_forward</button>
                     </a>
                 </li>  
-                <li class="card-item">
+                <li class="card-item swiper-slide">
                     <a href="#" class="card-link">
                         <img src="stuff/place5.jpeg" alt="Card Image" class="card-image">
                         <p class="badge five">5</p>
@@ -73,9 +74,14 @@
                     </a>
                 </li>    
             </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </div>
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="slide.js"></script>
 
 </body>
 </html>

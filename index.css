@@ -91,23 +91,3 @@ body.dark-mode {
 }
 
 
-@media (max-width: 768px) {
-    .top-bar {
-        flex-direction: column; /* Stack logo and navigation vertically */
-        align-items: center; /* Center-align everything */
-        padding: 10px;
-    }
-
-    .top-bar nav ul {
-        display: flex;
-        flex-direction: column; /* Stack the links vertically */
-        width: 100%;
-        padding-left: 0;
-        margin: 0;
-    }
-
-    .top-bar nav ul li {
-        margin-bottom: 15px; /* Add spacing between links */
-        text-align: center;
-    }
-}

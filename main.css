@@ -1,0 +1,110 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Section */
+.header {
+    background-color: #2353ff;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
+/* Main Content */
+.main {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    flex: 1; /* Ensures that main takes up the remaining space */
+    color: black;
+    text-align: center;
+}
+
+/* Individual Sections */
+.section {
+    text-align: center;
+    color: white;
+
+}
+
+/* Navigation Section */
+.nav {
+    background-color: #2353ff;
+    height: auto; /* Take up natural height based on content */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+
+}
+
+.nav a {
+    color: white;
+    margin: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #062bb2;
+    transition: 1.8s ease;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #2353ff;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.5rem;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+
+}
+
+
+/* Dark Mode Styles */
+body.dark-mode-active {
+    background-color: #000000;
+    color: white;
+}
+
+/* Dark Mode for h2 */
+body.dark-mode-active h2,h1,p,a{
+    color: white; /* Change h2 text to white in dark mode */
+}
+
+body.dark-mode-active #dark-button{
+    background-color: #1d0a7b;
+    color: white; /* Change h2 text to white in dark mode */
+}
+
+/* Dark Mode Button Styles */
+#dark-button {
+    background-color: #2353ff; /* Default button color */
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 1.8s ease;
+    border-radius: 10px;
+}
+
+#dark-button:hover {
+    background-color: #062bb2;
+}
+
+/* Button active in dark mode */
+#dark-button.dark-button-active {
+    background-color:#2353ff;  /* Green background when dark mode is active */
+    color: rgb(255, 255, 255);
+}

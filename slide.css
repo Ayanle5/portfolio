@@ -14,7 +14,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(#ECEFFE,#CED6FB);
+    background: white;
 
 }
 
@@ -48,7 +48,7 @@ body{
 }
 
 .card-list .card-item .card-link:hover{
-    border-color:  #5372f0;
+    border-color:  #8f93a3;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }

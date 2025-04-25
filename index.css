@@ -92,11 +92,28 @@ body.dark-mode {
 
 
 @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
+    .top-bar {
+        flex-direction: column; /* Stack logo and navigation vertically */
+        align-items: center; /* Center-align everything */
+        padding: 10px;
     }
-  
-    .content {
-      padding: 1rem;
+
+    .top-bar nav ul {
+        display: flex;
+        flex-direction: column; /* Stack the links vertically */
+        width: 100%;
+        padding-left: 0;
+        margin: 0;
     }
-  }
+
+    .top-bar nav ul li {
+        margin-bottom: 15px; /* Add spacing between links */
+        text-align: center;
+    }
+
+    /* Optional: Make the dark mode button take full width */
+    #darkmode {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

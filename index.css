@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #13347c;
+    background-color: #000000;
     color: white;
     padding: 10px 20px;
     position: fixed;  
@@ -66,7 +66,7 @@ body.dark-mode {
 
 /* Button Styles */
 #darkmode {
-    background-color: #13347c; /* Dark blue background */
+    background-color: #000000; /* Dark blue background */
     color: white;              /* White text */
     border: none;              /* Remove default borders */
     border-radius: 8px;        /* Rounded corners */

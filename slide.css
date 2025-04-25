@@ -1,0 +1,115 @@
+/* import google font- inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#ECEFFE,#CED6FB);
+
+}
+
+.card-list .card-item{
+    list-style: none;
+
+}
+
+.card-list .card-item .card-link{
+    width: 400px;
+    display: block;
+    background:#fff ;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+
+}
+
+.card-list .card-item .card-link:hover{
+    border-color:  #5372f0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.card-list .card-link .badge{
+    color: #5372f0;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #dde4ff;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-list .card-link .badge.one {
+    color: #5372f0;
+    background: #dde4ff;
+}
+.card-list .card-link .badge.two {
+    color: #b22485;
+    background: #f7dff5;
+}
+
+.card-list .card-link .badge.three {
+    color:#205c30 ;
+    background: #d6f8d6;
+
+}
+
+.card-list .card-link .badge.four {
+    color:#856404 ;
+    background: #fff3cd;
+
+}
+
+.card-list .card-link .badge.five {
+    color: #b25a2b;
+    background: #ffe3d2;
+}
+
+.card-list .card-link .card-title{
+    font-size: 1.19rem;
+    font-weight: 600;
+    width: fit-content;
+    color: #000;
+
+}
+
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color: #5372f0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372f0;
+    transform:rotate(-45deg);
+    transition: 0.4s ease;
+
+}
+
+.card-list .card-link:hover .card-button{
+    background: #5372f0;
+    color: #fff;
+}

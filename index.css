@@ -90,3 +90,13 @@ body.dark-mode {
     background-color: #9f9da7;
 }
 
+
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .content {
+      padding: 1rem;
+    }
+  }

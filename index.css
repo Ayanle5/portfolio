@@ -110,10 +110,4 @@ body.dark-mode {
         margin-bottom: 15px; /* Add spacing between links */
         text-align: center;
     }
-
-    /* Optional: Make the dark mode button take full width */
-    #darkmode {
-        width: 100%;
-        margin-top: 10px;
-    }
 }

@@ -191,10 +191,12 @@ body {
         padding: 20px;
       }
 
-    .project-image img {
+    .project-image img{
         max-width: 100%;  /* Ensures the image fits within the container */
         height: 100%;     /* Keeps aspect ratio intact */
-      }
+        object-fit: cover; /* Ensures the image covers the entire container */
+        border-radius: 20px; /* Optional: adds rounded corners to the image */
+    }
 
     .swiper{
         padding: none;

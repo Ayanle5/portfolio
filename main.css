@@ -3,13 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial
+    font-family: Arial;
 }
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    transition: all 1.8s ease;
+    color: black;
+
 }
 
 /* Header Section */
@@ -19,6 +22,8 @@ body {
     text-align: center;
     padding: 5px;
     font-size: 0.8rem;
+    transition: all 1.8s ease;
+
 }
 
 /* Main Content */
@@ -41,9 +46,12 @@ body {
 .nav {
     background-color: #2353ff;
     height: auto; /* Take up natural height based on content */
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
     padding: 5px;
+    transition: all 1.8s ease;
+
+
 
 }
 
@@ -52,11 +60,12 @@ body {
     margin: 10px;
     border-radius: 10px;
     text-decoration: none;
+    transition: 1.8s ease;
+
 }
 
 .nav a:hover {
     background-color: #062bb2;
-    transition: 1.8s ease;
 }
 
 /* Footer Section */
@@ -66,20 +75,31 @@ body {
     text-align: center;
     padding: 5px;
     font-size: 0.5rem;
+    transition: all 1.8s ease;
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
 
+
 }
 
+p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
 /* Dark Mode Styles */
 body.dark-mode-active {
     background-color: #000000;
     color: white;
+    transition: all 1.8s ease;
+
 }
 
 /* Dark Mode for h2 */
-body.dark-mode-active h2,h1,p,a{
+body.dark-mode-active h2,
+body.dark-mode-active h1,
+body.dark-mode-active p,
+body.dark-mode-active a{
     color: white; /* Change h2 text to white in dark mode */
 }
 
@@ -103,8 +123,10 @@ body.dark-mode-active #dark-button{
     background-color: #062bb2;
 }
 
-/* Button active in dark mode */
-#dark-button.dark-button-active {
-    background-color:#2353ff;  /* Green background when dark mode is active */
-    color: rgb(255, 255, 255);
+body.dark-mode-active .header,
+body.dark-mode-active .nav,
+body.dark-mode-active .footer {
+    background-color: #1d2f70; /* Darker blue */
+    color: white;
+    transition: all 1.8s ease;
 }

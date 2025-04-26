@@ -132,13 +132,20 @@ body {
   }
   .highlighted-name {
     color: #4facfe; /* Blue color for Ayanle */
-    text-shadow: 0 0 10px rgba(4, 121, 255, 0.5);
-
+    text-shadow: 0 0 10px rgb(0, 119, 255);
   }
 
   .highlighted-name:hover{
     color: #fff; /* White color on hover */
     transition: all 0.3s ease-in-out;
+  }
+
+  .hello2{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    top: -60px;
+    position: relative;
   }
 
   .navbar a{

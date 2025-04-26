@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    overflow-x: hidden;
+  }
+  
+  .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    overflow: hidden;
+    filter: blur(150px);
+    z-index: 0;
+    transform: translateY(0px);
+    transition: transform 0.1s linear;
+  }
+  
+  .gradient {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.6;
+    mix-blend-mode: screen;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.1, 0, 0.9, 1);
+  }
+  
+  .gradient-1 {
+    background: rgb(255, 17, 0);
+    width: 700px;
+    height: 700px;
+    animation-duration: 11s;
+    left: 60%;
+    top: 40%;
+    z-index: -2;
+    animation-name: animation-gradient-1;
+  }
+  
+  .gradient-2 {
+    background: rgb(0, 30, 255);
+    width: 600px;
+    height: 600px;
+    animation-duration: 11s;
+    left: 40%;
+    top: 60%;
+    z-index: -1;
+    animation-name: animation-gradient-2;
+  }
+  
+  .gradient-3 {
+    background: rgb(0, 0, 255);
+    width: 500px;
+    height: 500px;
+    animation-duration: 11s;
+    left: 50%;
+    top: 50%;
+    z-index: -3;
+    animation-name: animation-gradient-3;
+  }
+  
+  @keyframes animation-gradient-1 {
+    0% { transform: translate(-50%, -50%) rotate(-20deg) translateX(20%); }
+    25% { transform: translate(-50%, -50%) skew(-15deg, -15deg) rotate(80deg) translateX(30%); }
+    50% { transform: translate(-50%, -50%) rotate(180deg) translateX(25%); }
+    75% { transform: translate(-50%, -50%) skew(15deg, 15deg) rotate(240deg) translateX(15%); }
+    100% { transform: translate(-50%, -50%) rotate(340deg) translateX(20%); }
+  }
+  @keyframes animation-gradient-2 {
+    0% { transform: translate(-50%, -50%) rotate(40deg) translateX(-20%); }
+    25% { transform: translate(-50%, -50%) skew(15deg, 15deg) rotate(110deg) translateX(-5%); }
+    50% { transform: translate(-50%, -50%) rotate(210deg) translateX(-35%); }
+    75% { transform: translate(-50%, -50%) skew(-15deg, -15deg) rotate(300deg) translateX(-10%); }
+    100% { transform: translate(-50%, -50%) rotate(400deg) translateX(-20%); }
+  }
+  @keyframes animation-gradient-3 {
+    0% { transform: translate(-50%, -50%) translateX(-15%) translateY(10%); }
+    20% { transform: translate(-50%, -50%) translateX(20%) translateY(-30%); }
+    40% { transform: translate(-50%, -50%) translateX(-25%) translateY(-15%); }
+    60% { transform: translate(-50%, -50%) translateX(30%) translateY(20%); }
+    80% { transform: translate(-50%, -50%) translateX(5%) translateY(35%); }
+    100% { transform: translate(-50%, -50%) translateX(-15%) translateY(10%); }
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    font-family: system-ui, sans-serif;
+  }
+  
+  .aboutme {
+    margin-left: 20px;
+    margin-right: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+
+  }
+
+  .highlighted-name {
+    color: #4facfe; /* Blue color for Ayanle */
+  }

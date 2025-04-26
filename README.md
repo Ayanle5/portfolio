@@ -5,7 +5,7 @@ View my website: https://ayanleali.netlify.app
 <ul>
   <li>Projects section where you can view past and current projects.
   <li>About Me Section where you can connect with me.
-  <li>Dark Mode feature
+  <li>Skills section displaying langauges and tools I use.
   </li>
 </ul>
 <h2>Features i'm planning on adding:</h2>

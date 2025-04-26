@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: black;
+    background-image: url("stuff/background.jpg");
+    background-size: cover;
+    transition: none;
+}
+
+body.transition-on {
+    transition: all 1.8s ease;
+}
+
+.header,
+.footer,
+#dark-button {
+    transition: none;
+}
+
+body.transition-on .header,
+body.transition-on .footer,
+body.transition-on #dark-button {
+    transition: all 1.8s ease;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    color: black;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.8rem;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    color: black;
+}
+
+.section {
+    text-align: center;
+    color: white;
+}
+
+.header a {
+    color: black;
+    margin: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    background-color: #062bb2;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.2);
+    color: black;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.5rem;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    margin-top: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+}
+
+p {
+    margin: 10px 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.aboutme {
+    margin: 0 20px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+}
+
+/* Dark Mode */
+body.dark-mode-active {
+    background-image: url("stuff/background2.jpg");
+    color: white;
+}
+
+body.dark-mode-active h1,
+body.dark-mode-active h2,
+body.dark-mode-active p,
+body.dark-mode-active a {
+    color: white;
+}
+
+/* Button */
+#dark-button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+body.dark-mode-active #dark-button {
+    color: white;
+}
+
+#dark-button:hover {
+    background-color: #062bb2;
+}

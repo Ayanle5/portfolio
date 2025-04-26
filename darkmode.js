@@ -1,27 +1,31 @@
-// Function to toggle Dark Mode
 function toggledarkmode() {
-    var element = document.body;
-    
-    // Toggle dark mode on body
+    const element = document.body;
+
+    // Add transition effect
+    element.classList.add("transition-on");
+
+    // Toggle dark mode
     element.classList.toggle("dark-mode-active");
-    
-    // Save the dark mode state in localStorage
+
+    // Store state
     if (element.classList.contains("dark-mode-active")) {
         localStorage.setItem("dark-mode", "enabled");
     } else {
         localStorage.setItem("dark-mode", "disabled");
     }
+
+    // Remove transition class after animation ends
+    setTimeout(() => {
+        element.classList.remove("transition-on");
+    }, 1800);
 }
 
-// Check if dark mode was previously enabled in localStorage
-if (localStorage.getItem("dark-mode") === "enabled") {
-    // Apply dark mode on page load
-    document.body.classList.add("dark-mode-active");
-    // Optional: Change button appearance if needed
-    document.getElementById("dark-button").classList.add("dark-button-active");
-}
+// On page load, apply dark mode instantly if saved
+window.addEventListener("DOMContentLoaded", () => {
+    if (localStorage.getItem("dark-mode") === "enabled") {
+        document.body.classList.add("dark-mode-active");
+    }
 
-// Add event listener for the dark mode button click event
-document.getElementById("dark-button").addEventListener("click", function() {
-    toggledarkmode();  // Call the toggledarkmode function when the button is clicked
+    // Button click event
+    document.getElementById("dark-button").addEventListener("click", toggledarkmode);
 });

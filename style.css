@@ -261,6 +261,7 @@ body {
       border-radius: 20px;
       border:1px solid rgba(255, 255, 255, 0.18);
       box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      padding: 10px;
     }
 
     .skills:hover {
@@ -364,6 +365,31 @@ body {
       text-decoration: none;
 
     }
+
+    .tools {
+      display: flex;
+      align-items: center;
+      justify-content: center; /* center horizontally */
+      margin-bottom: 10px; /* space between items */
+      padding: 0px;
+    }
+    
+    .tools img {
+      margin-right: 10px; /* space between icon and text */
+    }
+    
+    .tooldes {
+      margin: 0; /* remove default margin of <p> */
+    }
+    
+    /* Container for centering all items */
+    .tools-container {
+      display: flex;
+      justify-content: center; /* center items horizontally */
+      flex-wrap: wrap; /* allow items to wrap on smaller screens */
+      gap: 20px; /* space between each tool item */
+    }
+    
 
 
     

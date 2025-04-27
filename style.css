@@ -336,6 +336,11 @@ body {
               animation: pulsate-fwd 0.5s ease-in-out infinite both;
     }
 
+    .tools a:hover{
+      -webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
+              animation: pulsate-fwd 0.5s ease-in-out infinite both;
+    }
+
     .tools{
       text-decoration: none;
     }

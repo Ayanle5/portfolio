@@ -6,10 +6,7 @@ View my website: https://ayanleali.netlify.app
   <li>Projects section where you can view past and current projects.
   <li>About Me Section where you can connect with me.
   <li>Skills section displaying langauges and tools I use.
-  </li>
+ <li>Blog Section where you can read my dev posts about projects im wokring on.
 </ul>
-<h2>Features i'm planning on adding:</h2>
-<ul>
-  <li>Blog Section where you can read my dev posts about projects im wokring on.
 <br>
 

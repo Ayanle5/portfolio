@@ -188,7 +188,8 @@ body {
       border:1px solid rgba(255, 255, 255, 0.18);
       box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
       height: 500px;
-      padding: 10px;
+      padding: 30px;
+      flex-direction: column;
       
     }
 
@@ -204,7 +205,7 @@ body {
 
     .project-content {
         text-align: center;
-        padding: 20px;
+        padding: 30px;
         word-wrap: break-word;
         
       }
@@ -224,6 +225,18 @@ body {
         max-height: 100%;     
         object-fit: contain; 
         border-radius: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .projects {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+      }
+    
+      .project-content {
+        padding: 20px;
+      }
     }
 
     .swiper{
@@ -325,3 +338,32 @@ body {
     .tools{
       text-decoration: none;
     }
+
+    .part:hover{
+      color: #4facfe; 
+    transition: all 0.3s ease-in-out;
+    }
+
+    .readmore{
+      text-decoration: none;
+      color:#4facfe
+    }
+
+    .blognav{
+      text-decoration: none;
+    }
+
+    .projectlink{
+      border-radius: 50%;
+      border-color: #000;
+      background-color:white;
+      padding: 5px;
+    }
+
+    .projectlink a{
+      text-decoration: none;
+
+    }
+
+
+    

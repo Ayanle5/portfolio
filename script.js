@@ -1,6 +1,6 @@
 const languages = [
-  { name: 'HTML5' },
-  { name: 'CSS3' },
+  { name: 'HTML' },
+  { name: 'CSS' },
   { name: 'JavaScript' },
   { name: 'Python' },
   { name: 'C#' },
@@ -11,10 +11,11 @@ const tools = [
   { name: 'Unity' },
   { name: 'Git' },
   { name: 'GitHub' },
+  { name: 'Firebase' },
   { name: 'VS Code' },
   { name: 'Netlify' },
-  { name: 'Chrome DevTools' },
-  { name: 'Figma' },
+  { name: 'Firestore' },
+
 ];
 
 function buildTrack(id, items) {
